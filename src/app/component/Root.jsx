@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
 import Parent from './Parent';
 
-import Button from '@material-ui/core/Button';
+import DialogTest from './DialogAndFormTest/DialogTest';
+import FormTest from './DialogAndFormTest/FormTest';
 
-import ControlledDialog from './DialogAndFormTest/ControlledDialog';
-import FormWrapper from './DialogAndFormTest/FormWrapper';
-
-import DialogContent from '@material-ui/core/DialogContent'
+import FileButton from './FileButton';
 
 class Root extends Component {
 
@@ -15,15 +13,7 @@ class Root extends Component {
             <div>
                 I'm Root
                 <br />
-                <ControlledDialog
-                    controller={<Button variant="contained">Dialog Button</Button>}
-                    onSubmit={()=>{}}
-                >
-                    <DialogContent>
-                        Test
-                    </DialogContent>
-                </ControlledDialog>
-                <FormWrapper/>
+                <FileButton/>
             </div>
         );
     }

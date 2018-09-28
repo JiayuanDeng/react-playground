@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 
-class TestForm extends Component {
+class UserForm extends Component {
     constructor(props) {
         super(props);
         this.form = React.createRef();
@@ -20,14 +20,14 @@ class TestForm extends Component {
         this.props.handleSubmit(formData);
     };
 
-    handleDispatchSubmitEvent = () => {
+    /*handleDispatchSubmitEvent = () => {
         console.log('TestForm.handleDispatchSubmitEvent');
         this.form.current.dispatchEvent(new Event("submit"));
-    };
+    };*/
 
     render() {
         return (
-            <form onSubmit={this.onSubmit} ref={this.form} style={{backgroundColor: 'cyan'}}>
+            <form onSubmit={this.onSubmit} ref={this.props.formRef}>
                 <Grid container spacing={24}>
                     <Grid item xs={6}>
                         <TextField fullWidth name='firstName' label="First Name"
@@ -43,4 +43,4 @@ class TestForm extends Component {
     }
 }
 
-export default TestForm;
+export default UserForm;
