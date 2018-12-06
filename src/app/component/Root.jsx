@@ -8,8 +8,7 @@ class Root extends Component {
     render() {
         return (
             <div>
-                I'm Root
-                <br />
+                <h2>Root</h2>
                 <SharedStoreTest/>
             </div>
         );

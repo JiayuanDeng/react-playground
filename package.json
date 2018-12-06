@@ -8,7 +8,8 @@
     "classnames": "^2.2.6",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-bind-store": "0.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

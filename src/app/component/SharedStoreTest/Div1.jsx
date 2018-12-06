@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {bindStore, getStore, unbindStore} from './store';
+import {bindStore, getStore, unbindStore} from 'react-bind-store';
 
 class Div1 extends Component {
     componentWillMount () {
